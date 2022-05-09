@@ -787,7 +787,7 @@ damage_callback( einflictor, eattacker, idamage, idflags, smeansofdeath, sweapon
     {
         if(self getcurrentweapon() == "riotshield_zm" || self getcurrentweapon() == "alcatraz_shield_zm" || self getcurrentweapon() == "tomb_shield_zm")
         {
-            shield_hp = 1500;
+            shield_hp = level.zombie_vars[ "riotshield_hit_points" ];
             if ( !isDefined( self.shielddamagetaken ) )
             {
                 self.shielddamagetaken = 0;
